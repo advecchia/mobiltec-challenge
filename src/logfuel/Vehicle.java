@@ -1,7 +1,8 @@
 package logfuel;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import logfuel.Supply;;
 
 public class Vehicle {
 
@@ -9,13 +10,13 @@ public class Vehicle {
 
     private String model = null;
 
-    private List<Supply> supplies = new ArrayList<>();
+    private SortedMap<Integer, Supply> supplies = new TreeMap<>();
 
     public Vehicle() {
         super();
     }
 
-    public Vehicle(String brand, String model, List<Supply> supplies) {
+    public Vehicle(String brand, String model, SortedMap<Integer, Supply> supplies) {
         super();
         this.brand = brand;
         this.model = model;
@@ -38,16 +39,16 @@ public class Vehicle {
         this.model = model;
     }
 
-    public List<Supply> getSupplies() {
+    public SortedMap<Integer, Supply> getSupplies() {
         return supplies;
     }
 
-    public void setSupplies(List<Supply> supplies) {
+    public void setSupplies(SortedMap<Integer, Supply> supplies) {
         this.supplies = supplies;
     }
 
     public void updateSupplies(Supply supply) {
-    	this.supplies.add(supply);
+    	this.supplies.put(supply.getCurrentMileage(), supply);
     }
 
     @Override

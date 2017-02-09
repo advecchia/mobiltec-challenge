@@ -36,9 +36,8 @@ abastecimento.
 
 ## Baixando o código fonte e executando
 Faça o download ou clone o repositório da aplicação que está no Git através do seguinte [link](https://github.com/advecchia/mobiltec-challenge.git "Baixar repositório").
-> $ git clone https://github.com/advecchia/mobiltec-challenge.git
-> $ cd mobiltec-challenge
-> $ javac src/logfuel/*.java
-> $ java -cp ./src logfuel.LogCombustivel 
-
+> $ git clone https://github.com/advecchia/mobiltec-challenge.git  
+> $ cd mobiltec-challenge  
+> $ javac src/logfuel/*.java  
+> $ java -cp ./src logfuel.LogCombustivel  
 
